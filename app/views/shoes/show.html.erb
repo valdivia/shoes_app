@@ -7,8 +7,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= image_tag(@shoe.picture_url, :width => 400) if @shoe.picture.present? %></p>
-
+  <%= image_tag(@shoe.picture_url, :width => 600) if  @shoe.has_picture_upload? %>
 <p>
   <strong>Designer:</strong>
   <%= @shoe.designer %>
